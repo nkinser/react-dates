@@ -359,6 +359,7 @@ class DayPicker extends React.PureComponent {
 
   onKeyDown(e) {
     e.stopPropagation();
+    e.preventDefault();
 
     if (!MODIFIER_KEY_NAMES.has(e.key)) {
       this.throttledKeyDown(e);
